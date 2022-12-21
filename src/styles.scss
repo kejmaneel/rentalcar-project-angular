@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
