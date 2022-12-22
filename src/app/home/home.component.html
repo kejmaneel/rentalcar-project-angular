@@ -1,64 +1,111 @@
 <div class="container">
-  <div
-    id="carouselExampleIndicators"
-    class="carousel slide"
-    data-bs-ride="true"
-  >
-    <div class="carousel-indicators">
-      <button
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide-to="0"
-        class="active"
-        aria-current="true"
-        aria-label="Slide 1"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide-to="1"
-        aria-label="Slide 2"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide-to="2"
-        aria-label="Slide 3"
-      ></button>
+  <div class="row">
+    <div class="col-lg-8 m-auto mt-5">
+      <div class="carousel slide" id="slider1" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <button data-bs-target="#slider1" data-bs-slide-to="0"></button>
+          <button data-bs-target="#slider1" data-bs-slide-to="1"></button>
+          <button data-bs-target="#slider1" data-bs-slide-to="2"></button>
+          <button
+            class="active"
+            data-bs-target="#slider1"
+            data-bs-slide-to="3"
+          ></button>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/mg4.jpg" class="d-block w-100" alt="MG 4" />
+          </div>
+          <div class="carousel-item active">
+            <img
+              src="assets/img/volt_city.jpg"
+              class="d-block w-100"
+              alt="VOLT CITY EV"
+            />
+          </div>
+          <div class="carousel-item active">
+            <img
+              src="assets/img/bmw_ix_3.jpg"
+              class="d-block w-100"
+              alt="BMW iX3"
+            />
+          </div>
+          <div class="carousel-item active">
+            <img
+              src="assets/img/toyota_bz4x.jpg"
+              class="d-block w-100"
+              alt="TOYOTA bZ4X"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          data-bs-slide="prev"
+          data-bs-target="#slider1"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          data-bs-slide="next"
+          data-bs-target="#slider1"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/img/mg4.jpg" class="d-block w-100" alt="MG 4 EV" />
-      </div>
-      <div class="carousel-item">
-        <img
-          src="assets/img/bmw_i4.jpg
-            "
-          class="d-block w-100"
-          alt="BMW I4"
-        />
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/volt_city.jpg" class="d-block w-100" alt="VOLT CITY" />
-      </div>
+  </div>
+
+  <div class="container mt-5">
+    <div id="frame-rt">
+      <h1 class="rt-header">การจอง</h1>
+      <form action="/action_page.php">
+        <div class="row mt-3">
+          <div class="col f-th">
+            <label for="location">จุดรับรถ</label>
+            <input
+              type="text"
+              class="form-control"
+              id="location"
+              placeholder="Enter Location"
+              name="location"
+            />
+          </div>
+          <div class="col f-th">
+            <label for="locationb">จุดคืนรถ</label>
+            <input
+              type="text"
+              class="form-control"
+              id="locationb"
+              placeholder="Enter Location"
+              name="locationb"
+            />
+            <div class="form-check mb-4 mt-3">
+              <label class="form-check-label">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="usewithlocation"
+                />ใช้คู่กับจุดรับรถ
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col f-th">
+            <label for="date">วันที่รับรถ</label>
+            <input class="form-control" type="date" id="date" name="date" />
+          </div>
+          <div class="col f-th">
+            <label for="dateb">วันที่คืนรถ</label>
+            <input class="form-control" type="date" id="dateb" name="dateb" />
+          </div>
+        </div>
+        <div class="ctsearch">
+          <button type="button" class="f-th btnsearch">ค้นหา</button>
+        </div>
+      </form>
     </div>
-    <button
-      class="carousel-control-prev"
-      type="button"
-      data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev"
-    >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button
-      class="carousel-control-next"
-      type="button"
-      data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next"
-    >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
 </div>
+<app-footer></app-footer>
