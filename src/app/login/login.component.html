@@ -1,6 +1,6 @@
 <div class="container f-en f-th">
   <div class="row">
-    <div class="frame-login">
+    <div class="col-lg-6 frame-login">
       <h1>Login</h1>
       <form action="/action_page.php">
         <div class="form-floating mb-3 mt-3">
@@ -40,7 +40,7 @@
             data-bs-target="#myModal"
           >
             Login
-          </button>
+          </button><br>
           <button
             type="button"
             class="btnpglogin m-3"
@@ -48,6 +48,14 @@
             data-bs-target="#myModal"
           >
             New User?
+          </button>
+          <button
+            type="button"
+            class="btnpglogin m-3"
+            data-bs-toggle="modal"
+            data-bs-target="#myModal"
+          >
+            Forgot Password
           </button>
         </div>
 
@@ -76,6 +84,12 @@
           </div>
         </div>
       </form>
+    </div>
+    <div class="col-lg-6 frame-lgwith">
+      <h1 class="hd-lgwith">Or</h1>
+      <h2 class="tt-lgwith">Login with</h2>
+      <div><button class="btnlgwith-fb"><i class="fa-brands fa-facebook icon-login"></i>Facebook</button></div>
+      <div><button class="btnlgwith-gm"><i class="fa-brands fa-google icon-login"></i>Gmail</button></div>
     </div>
   </div>
 </div>

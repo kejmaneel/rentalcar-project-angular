@@ -1,0 +1,59 @@
+<div class="container f-en f-th">
+    <div class="row">
+      <div class="frame-register">
+        <h1>Register</h1>
+        <form action="/action_page.php">
+            <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control" id="uname" placeholder="Enter Username" name="uname">
+                <label for="uname">Username</label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control" id="email" placeholder="Enter Email" name="email">
+                <label for="email">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="cemail" placeholder="Confirm Email" name="cemail">
+                <label for="cemail">Confirm Email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="pwd" placeholder="Enter Password" name="pwd">
+                <label for="pwd">Password</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="cpwd" placeholder="Confirm Password" name="cpwd">
+                <label for="cpwd">Confirm Password</label>
+            </div>
+            <div class="form-check mb-3">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember" />
+                    I agree to receive news from this site
+                </label>
+            </div>
+            <div class="ctregister">
+            <button 
+            type="button" 
+            class="btnpgregister" 
+            data-bs-toggle="modal" 
+            data-bs-target="#myModal">Register</button>
+            <button class="btnpgregister" routerLink="/login">Already Register?</button></div>
+  
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Complete</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            Register Complete!!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>

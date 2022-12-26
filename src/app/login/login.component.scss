@@ -2,10 +2,10 @@ body{
     height: 100%;
 }
 .frame-login{
-    margin-top: 40px;
-    margin-bottom: 30px;
-    padding: 50px;
-    background-color: #a4c1e7;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 30px;
+    background-color: var(--blue);
     border-radius: 30px;
 }
 .ctlogin{
@@ -14,7 +14,7 @@ body{
     margin-bottom: 50px;
 }
 .btnpglogin{
-    background-color: #F8EBC0;
+    background-color: var(--yellow);
     border-radius: 10px;
     border: none;
     font-weight: bolder;
@@ -22,4 +22,43 @@ body{
     padding-right: 20px;
     padding-top: 9px;
     padding-bottom: 9px;
+}
+.frame-lgwith{
+    margin-top: 200px;
+    text-align: center;
+}
+.hd-lgwith{
+    font-size: 30px;
+}
+.tt-lgwith{
+    font-size: 20px;
+}
+.btnlgwith-fb{
+    background-color: var(--facebook);
+    color: var(--white);
+    border:none;
+    border-radius: 30px;
+    cursor: pointer;
+    padding-top: 3px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 15px;
+    margin-bottom: 5px;
+}
+.btnlgwith-gm{
+    background-color: var(--google);
+    color: var(--white);
+    border:none;
+    border-radius: 30px;
+    cursor: pointer;
+    padding-top: 3px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 15px;
+    margin-bottom: 5px;
+}
+.icon-login{
+    position: relative;
+    font-size: 2rem;
+    margin-right: 5px;
 }

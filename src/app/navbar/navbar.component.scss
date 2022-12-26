@@ -1,5 +1,5 @@
 .nv-bar {
-  background-color: #f8ebc0;
+  background-color: var(--yellow);
   margin: 0%;
   padding: 0%;
 }
@@ -22,7 +22,7 @@
     margin-right: 50px;
 }
 .signinbtn{
-    background-color: #a4c1e7;
+    background-color: var(--blue);
     color: black;
     border-radius: 10px;
     border: none;
