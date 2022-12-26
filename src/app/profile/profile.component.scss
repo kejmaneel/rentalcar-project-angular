@@ -1,0 +1,30 @@
+#frame-pf {
+  background-color: var(--blue);
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 55px;
+  border-radius: 20px;
+}
+.btn-pf {
+  background-color: var(--yellow);
+  color: black;
+  border: none;
+  margin-right: 5px;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.pf-header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.rounded-circle {
+  width: 200px;
+  height: 200px;
+}
